@@ -13,6 +13,8 @@ public class ShowGuess extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        if(getIntent().getStringExtra("guess") != null) mainBinding.receivedTextView.setText(getIntent().getStringExtra("guess"));
+        Bundle bundle = getIntent().getExtras();
+
+        if(bundle != null) mainBinding.receivedTextView.setText(bundle.getString("name")+" "+bundle.getInt("age",41));
     }
 }

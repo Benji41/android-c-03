@@ -30,6 +30,7 @@ private ActivityShowGuessBinding showGuessBinding;
                 startActivity(intent);
             }
         });
+
     }
 
     @Override
