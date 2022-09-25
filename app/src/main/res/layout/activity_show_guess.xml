@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShowGuess">
+
+        <Button
+            android:id="@+id/button_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="259dp"
+            android:text="@string/guess_the_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/inputField_guess"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="341dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="34dp"
+            android:ems="10"
+            android:hint="@string/hint_editText"
+            android:inputType="textPersonName"
+            android:textColorHint="#757575"
+            app:layout_constraintBottom_toTopOf="@+id/button_guess"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
